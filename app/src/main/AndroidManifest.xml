@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.behruz.magmovie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.behruz.magmovie.base.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.behruz.magmovie.ui.activity.MovieFullDetailActivity">
+        </activity>
+        <activity android:name="com.behruz.magmovie.ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.behruz.magmovie.ui.activity.onBoarding.OnBoardingActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.MainActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.GenresDetailActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.MovieDetailActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.TvDetailActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.SearchActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.AiringMovieActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.MostRatedMovieActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.MostPopularMovieActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.tv.MostPopularTVActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.tv.OnAiringTVActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.tv.OnTheAirTVActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.tv.TopRatedTvActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.SettingsActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.DiscoverActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.TvFullDetailActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.movietvDetail.MovieReviewActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.tv.AllCastActivity" />
+        <activity android:name="com.behruz.magmovie.ui.activity.PersonDetailsActivity" />
+        <activity android:name="com.behruz.magmovie.ui.fragment.UpcomingMovieActivity" />
+        <activity
+            android:name="com.behruz.magmovie.ui.activity.PlayTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.behruz.magmovie.ui.activity.VideoActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.behruz.magmovie.ui.activity.VideosActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.behruz.magmovie.ui.activity.AboutUsActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
